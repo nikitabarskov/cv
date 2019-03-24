@@ -1,85 +1,13 @@
-\documentclass[12pt]{article}
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
 
-\usepackage[left=0.5cm, right=0.5cm, top=0.5cm, bottom=0.5cm, bindingoffset=0cm]{geometry}
-
-\usepackage[english,russian]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-
-\usepackage{multicol}
-\usepackage{parskip}
-
-\usepackage{fontspec}
-\usepackage{fontawesome}
-
-\pagenumbering{gobble}
-
-\usepackage{ragged2e}
-\usepackage{microtype}
-
-\justifying
-\sloppy
-\tolerance=1000
-\hyphenpenalty=10000
-\emergencystretch=3em
-
+\documentclass[a4paper,10pt]{article}
+\include{preambule}
 \begin{document}
-    \textbf{Barskov Nikita}
-    \begin{multicols}{2}
-        Data Engineer at Maxifier. \\
-        Master Degree Student \\
-        at Samara University.
-        \begin{description}
-            \item[\faMapPin] Samara, Russia
-        \end{description}
-        \columnbreak
-        \begin{description}
-            \item[\faPhone] \texttt{+7(927)657-16-10}
-            \item[\faGithub] \texttt{github.com/nikitabarskov}
-            \item[\faLinkedin] \texttt{linkedin.com/in/nikitabarskov}
-            \item[\faPaperPlane] \texttt{t.me/nikitabarskov}
-        \end{description}
-    \end{multicols}
-    \subsection*{Professional Summary}
-    I am a data engineer, an enthusiast for developing intelligent and modern applications that improve the quality
-    of using and presenting data. I've got 2 years experience with implementing ETL with frameworks such as
-    Apache Spark, Apache Hadoop, Apache Mesos. I'm well known in Python data analysis libraries, mathematical packages,
-    and visualization tools.
-
-    I'm a bachelor of applied mathematics and physics with close to excellent average score (4.75/5.0). All mathematical
-    and software engineer exercises have done with excellent score. My academic mathematical background allows me to
-    take advantages of statistic, calculus and algebra methods for transforming data as I need and extracting necessary
-    information for my work and needs.
-
-    Now, I'm a student at Samara University with an excellent (5.0/5.0 at the moment) average score. Masters programme
-    "Data Mining and Quality Assurance" contains courses about software lifecycle, testing, basic business analysis
-    knowledge and fundamentals of machine learning. My Master's thesis theme is <<Forecasting users interacting with
-    advertising content on sites>> and it absolutely relates with my current job specific.
-    \subsection*{Experience}
-    \subsubsection*{Maxifier, Samara, Russia}
-    \textbf{Intern} \hfill April 2017 -- June 2017\\
-    Working on batch processing project in Maxifier as Intern. \\
-    Stack: Java, Guice, PostgreSQL, Spark, Hadoop, Aurora, Bazel, GitLab CI. \\
-    \textbf{Data Engineer} \hfill June 2017 -- Present\\
-    Developing the application for forecasting users interactions with advertising content and its evaluation. \\
-    Stack: Python/Scala, Spark, Hadoop, Mesos, Docker, MySQL, Akka, Slick, SciPy, Maven, GitHub.
-    \subsection*{Education}
-    \subsubsection*{Samara University, Samara Russia}
-    \textbf{Master Degree Student}\hfill \hfill September 2017 -- Present\\
-    Data Analysis and Quality Assurance, Average Point 5.0\\
-    \textbf{Bachelor of Science} \hfill Sep 2013 -- June 2017\\
-    Applied Mathematics and Physics, Average Point 4.75
-    \newpage
-    \subsection*{Skills}
-    \textbf{Personal:} rational, responsible, sociable \\
-    \textbf{Base Skills:} advanced knowledge in mathematics and application of these methods to ETL \\
-    \textbf{Natural Languages:} Russian (native), English (intermediate) \\
-    \textbf{Programming Languages:} \texttt{Python 3} (intermediate knowledge for writing batch processing jobs and data
-    science), \texttt{Scala, Java} (regular knowledge for writing services and batch processing jobs) \\
-    \textbf{Frameworks and libraries:} Apache Spark, Apache Hadoop, Apache Mesos, Docker, Scipy(Pandas, Numpy,
-    Matplotlib), Scikit-learn, Akka, Slick \\
-    \textbf{Build Tools and VCS:} Maven, Bazel, Git, Gitlab CI, Github \\
-    \textbf{Others:} fundamental knowledge about the development process (Process Cycle of Software Applications
-    Development, methodologies, QA(methods and approaches), Bussiness and System Analytics(methods and approaches))
+    \input{inc/header}
+    \input{inc/professional-summary}
+    \input{inc/experience}
+    \input{inc/education}
+    \input{inc/skills}
 \end{document}
   
