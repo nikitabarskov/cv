@@ -167,6 +167,8 @@ _minted*
 # pdfpcnotes
 *.pdfpc
 
+*.pdf
+
 # sagetex
 *.sagetex.sage
 *.sagetex.py
