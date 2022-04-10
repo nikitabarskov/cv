@@ -12,3 +12,6 @@ lock-image-digests:
 
 verify-image-digests:
 	docker compose run --rm docker-lock lock verify
+
+format-fix: cv.tex
+	docker compose run --rm devtools latexindent --overwrite cv.tex

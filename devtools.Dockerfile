@@ -21,5 +21,4 @@ COPY --from=fonts /tmp/fonts /srv/src/fonts
 RUN mkdir -p /root/.local/share/fonts && \
     find /srv/src/fonts -name "*.ttf" -exec cp "{}" /root/.local/share/fonts \; && \
     find /srv/src/fonts -name "*.otf" -exec cp "{}" /root/.local/share/fonts \; && \
-    fc-cache -f -v && \
-    ls -la /root/.local/share/fonts
+    fc-cache -f -v
