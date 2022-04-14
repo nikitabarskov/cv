@@ -1,0 +1,26 @@
+{
+	"composefiles": {
+		"docker-compose.yml": [
+			{
+				"name": "docker.io/texlive/texlive",
+				"tag": "latest",
+				"digest": "69c79bf9bc9b8e055d5f9c59aa61c4687a8f27d1dfbc4eb6f6707cb1df41661f",
+				"dockerfile": "devtools.Dockerfile",
+				"service": "devtools"
+			},
+			{
+				"name": "docker.io/curlimages/curl",
+				"tag": "latest",
+				"digest": "c1c1cda72ab8c306390fc05518bf4d42148564978326d078f65d546858d139cb",
+				"dockerfile": "devtools.Dockerfile",
+				"service": "devtools"
+			},
+			{
+				"name": "docker.io/safewaters/docker-lock",
+				"tag": "latest",
+				"digest": "432d90ddc2891f4845241adc63e5eef2dd1486fa14ea7882433cbd3f8ed64622",
+				"service": "docker-lock"
+			}
+		]
+	}
+}
