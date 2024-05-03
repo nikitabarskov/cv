@@ -1,0 +1,22 @@
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=10mm,
+	right=10mm,
+	bottom=10mm,
+	top=10mm
+}
+\pagestyle{empty}
+
+\usepackage{titlesec}
+\titleformat{\section}[display]{\center\bfseries\large}{\thesection}{}{}[\titlerule]
+\titlespacing{\section}{0em}{2ex}{2ex}
+\titleformat{\subsection}[display]{\center\bfseries\large}{\thesubsection}{}{}[\titlerule]
+\titlespacing{\subsection}{0em}{2ex}{2ex}
+\titleformat{\subsubsection}[runin]{\bfseries}{\thesubsubsection}{}{}[\hspace*{\fill}]
+\titlespacing{\subsubsection}{0em}{1ex}{1em}
+\titleformat{\paragraph}[runin]{\bfseries}{\theparagraph}{}{}[\hspace*{\fill}]
+\titlespacing{\paragraph}{0.5em}{1ex}{1em}

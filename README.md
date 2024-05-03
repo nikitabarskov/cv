@@ -1,4 +1,9 @@
 # CV
 
-I keep my CV as [a LaTeX file](barskov-nikita-cv.tex), every time I update it, I create a
-release on GitHub and update a reference on my personal website.
+I keep my CV as [a Markdown file](barskov-nikita-cv.md), every time I update
+it, GitHub actions publishes a release with a publically available PDF.
+
+Check out my latest CV:
+
+- Markdown: [barskov-nikita-cv.md](barskov-nikita-cv.md)
+- PDF: [barskov-nikita-cv.pdf](https://github.com/nikitabarskov/cv/releases/latest)
