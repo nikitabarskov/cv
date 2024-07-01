@@ -18,7 +18,8 @@ configure:
         cpanm -n File::HomeDir && \
         cpanm -n Params::ValidationCompiler && \
         cpanm -n YAML::Tiny
-    RUN tlmgr install titlesec latexindent
+    RUN tlmgr update --self && \
+        tlmgr install titlesec latexindent
 
 code:
     FROM +configure
