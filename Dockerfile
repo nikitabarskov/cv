@@ -1,3 +1,3 @@
-FROM docker.io/pandoc/latex:3@sha256:def4afcf033586bc67b393236a3247d79234e76c5fa006365c2fdc1dc0cba5e6 AS pandoc
+FROM docker.io/pandoc/latex:3-alpine@sha256:0960c2a6691d9fb95105baa8eebc5bf352489f336ec171fd317fac281eb1804f AS pandoc
 
 WORKDIR /srv/workspace

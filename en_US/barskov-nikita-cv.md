@@ -7,11 +7,18 @@ fontsize: 10pt
 Located in Oslo, Norway. Contacts for communication are [`linkedin.com/in/nikitabarskov`][linkedin],
 [`nbarskov@gmail.com`][mail], or phone `+47 94 13 31 14` in **English** (Fluent), **Norwegian** (Proficient), or **Russian** (Native).
 
-Data Engineer with 7+ years of experience in data engineering and machine
-learning. Skilled in leading teams, building scalable data systems, and
-applying modern software practices.
+Principal Software Engineer with 8+ years of experience
+building highly scalable, cloud-native data software and
+leading cross-functional teams.
 
-Proficient in Golang, Python, and various cloud technologies. Focused on creating effective solutions for data-driven products and excelling in collaborative environments.
+Proficient in designing distributed systems using Go, Python,
+and TypeScript with a focus on reliability, security, and
+performance.
+
+Proven track record of establishing and leading engineering
+initiatives, guiding and mentoring engineering teams to
+deliver exceptional products.
+
 
 [mail]: mailto:nbarskov@gmail.com
 [linkedin]: https://linkedin.com/in/nikitabarskov
@@ -24,26 +31,30 @@ Oslo, Norway
 
 #### Principal Data Engineer
 
-October 2024 - __Now__
+October 2024 - May 2025
 
-* Leading the development of data ingestion solutions for strategic partners,
-ensuring reliable and secure data transfer
-* Established and optimized company-wide processes for building scalable
-products through implementation of DevOps best practices and architectural
-improvements
+* Led technical implementation of strategic partner integrations, requiring
+solution design and onboarding workshops, ensuring secure and scalable data
+ingress and egress.
+* Established company-wide DevOps processes with a focus on cloud-native
+architectural standards and practices, with specific focus on Infrastructure
+as Code and Continuous Delivery.
+* Established a practice of regular workshops and knowledge-sharing sessions
+to improve team collaboration.
 
 #### Senior Software Engineer
 
 May 2023 - September 2024
 
-* Designing datamodels and processing pipelines, creating internal and external
-APIs, and managing the underlying infrastructure.
-* Improving processes and contributing to building a scalable product in the
-company by advocating modern software development practices like
-containerisation, continuous delivery, API First, infrastructure as code,
-platform engineering, and team topologies.
-* Mentoring junior developers and advising on secure and reliable software
-development practices.
+* Designed and delivered an external API for customer integration, ensuring
+secure and scalable data ingress and egress.
+* Led an initiative to bring Infrastructure as Code to the company
+infrastructure, simplifying deployment and maintenance, and improving security
+and access control.
+* Contributed to company-wide engineering culture by mentoring developers and
+advising them on modern software development practices like containerization,
+continuous delivery, API First, Infrastructure as Code, platform engineering,
+and team topologies.
 
 ### Coop Norge
 
@@ -53,14 +64,12 @@ Oslo, Norway
 
 April 2021 - April 2023
 
-* Lead the Analytics Platform team to support analysts and data scientists in
+* Led the Analytics Platform team to support analysts and data scientists in
 delivering insights and models.
 * Played a key role in the development team responsible for delivering a new
-backend for the Coop Norge OBS! Bygg customer leaflet within the Coop mobile
-application.
+backend for the Coop Norge OBS! Bygg customer leaflet within the Coop mobile application.
 * Enhanced processes and played a central role in implementing modern data
-warehouse architecture, Data Mesh, to build a scalable product within the
-company.
+warehouse architecture, Data Mesh, to build a scalable product within the company.
 * Contributed to the development of the internal developer platform.
 
 #### Data Engineer
