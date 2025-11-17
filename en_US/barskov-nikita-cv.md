@@ -25,6 +25,14 @@ deliver exceptional products.
 
 ## Experience
 
+### Deepinsight
+
+Oslo, Norway
+
+### Senior Software Engineer
+
+June 2025 - _Present_
+
 ### Volur
 
 Oslo, Norway
