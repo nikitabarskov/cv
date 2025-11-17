@@ -9,3 +9,8 @@ Check out my latest CV:
 - PDF: [barskov-nikita-cv.pdf](https://github.com/nikitabarskov/cv/releases/latest)
 
 It's available in Norwegian and English.
+
+## Links
+
+- https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/
+- https://capd.mit.edu/channels/make-a-resume-cover-letter-cv/
