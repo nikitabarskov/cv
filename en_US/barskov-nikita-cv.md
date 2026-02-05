@@ -7,18 +7,10 @@ fontsize: 10pt
 Located in Oslo, Norway. Contacts for communication are [`linkedin.com/in/nikitabarskov`][linkedin],
 [`nbarskov@gmail.com`][mail], or phone `+47 94 13 31 14` in **English** (Fluent), **Norwegian** (Proficient), or **Russian** (Native).
 
-Principal Software Engineer with 8+ years of experience
-building highly scalable, cloud-native data software and
-leading cross-functional teams.
+Software Engineer with 8+ years of experience building highly scalable,
+cloud-native software and leading cross-functional teams.
 
-Proficient in designing distributed systems using Go, Python,
-and TypeScript with a focus on reliability, security, and
-performance.
-
-Proven track record of establishing and leading engineering
-initiatives, guiding and mentoring engineering teams to
-deliver exceptional products.
-
+Proven track record in establishing DevOps practices, leading technical initiatives, and mentoring engineering teams across distributed systems, data platforms, and API design. Proficient in designing distributed systems using Go, Python, Java, and TypeScript with a focus on reliability, security, and performance.
 
 [mail]: mailto:nbarskov@gmail.com
 [linkedin]: https://linkedin.com/in/nikitabarskov
@@ -32,6 +24,11 @@ Oslo, Norway
 ### Senior Software Engineer
 
 June 2025 - _Present_
+
+* Build and maintain Python-based API services for staffing plan features,
+  including data model design and database management.
+* Work on core infrastructure including FastAPI-based internal framework,
+* OpenTelemetry monitoring, and CI/CD pipeline improvements.
 
 ### Volur
 
@@ -124,6 +121,6 @@ Samara, Russian Federation
 
 ## Technical skills
 
-Golang, Python, dbt, gRPC, Protobuf, Open Container Initiative, Kubernetes,
-OpenTofu, Terraform, OpenTelemetry, GitHub Actions, Snowflake, Azure, Google
-Cloud.
+Golang, Python, Java, Scala, dbt, REST, FastAPI, gRPC, Protobuf, 
+Open Container Initiative, Kubernetes, OpenTofu, Terraform, OpenTelemetry,
+GitHub Actions, Snowflake, Azure, Google Cloud.
