@@ -21,14 +21,14 @@ Proven track record in establishing DevOps practices, leading technical initiati
 
 Oslo, Norway
 
-### Senior Software Engineer
+#### Senior Software Engineer
 
 June 2025 - _Present_
 
 * Build and maintain Python-based API services for staffing plan features,
   including data model design and database management.
-* Work on core infrastructure including FastAPI-based internal framework,
-* OpenTelemetry monitoring, and CI/CD pipeline improvements.
+* Work on core infrastructure including authentication, FastAPI-based internal
+  framework for RESTful APIs, OpenTelemetry monitoring, and CI/CD pipeline improvements.
 
 ### Volur
 
@@ -75,7 +75,6 @@ delivering insights and models.
 backend for the Coop Norge OBS! Bygg customer leaflet within the Coop mobile application.
 * Enhanced processes and played a central role in implementing modern data
 warehouse architecture, Data Mesh, to build a scalable product within the company.
-* Contributed to the development of the internal developer platform.
 
 #### Data Engineer
 
@@ -89,6 +88,11 @@ Oslo Norway
 
 September 2019 - March 2021
 
+* Developed internal analytics tools in Python for maritime traffic assessment,
+  including cargo and oil ship movement tracking and fracking activity detection.
+* Built backend services and data processing pipelines to support analytics
+  workflows and reporting capabilities.
+
 ### Inventale
 
 Samara, Russian Federation
@@ -97,6 +101,13 @@ Samara, Russian Federation
 
 September 2017 - August 2019
 
+* Developed and maintained a page interactions forecast engine using
+  Java and Apache Spark with batch data ingress and transformation pipelines.
+* Built internal REST APIs in Java and Scala for back-tracking evaluation of
+  the forecast engine, enabling continuous model improvements.
+* Contributed to backend development in Java, focusing on performance
+  optimization, data processing pipelines, and scalability improvements.
+
 ### Cxense
 
 Samara, Russian Federation
@@ -104,6 +115,11 @@ Samara, Russian Federation
 #### Intern
 
 April 2017 - August 2017
+
+* Contributed to the development of internal APIs in Java for Cxense Data
+  Management Platform (DMP), working with REST services and data integration.
+* Developed batch processing modules in Java and Apache Spark for data
+  processing and analytics.
 
 ## Education
 
@@ -121,6 +137,6 @@ Samara, Russian Federation
 
 ## Technical skills
 
-Golang, Python, Java, Scala, dbt, REST, FastAPI, gRPC, Protobuf, 
+Golang, Python, Java, Scala, dbt, Spark, REST, FastAPI, gRPC, Protobuf, 
 Open Container Initiative, Kubernetes, OpenTofu, Terraform, OpenTelemetry,
 GitHub Actions, Snowflake, Azure, Google Cloud.
