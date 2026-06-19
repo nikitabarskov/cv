@@ -6,7 +6,8 @@ update it, GitHub actions publishes a release with a publically available PDF.
 Check out my latest CV:
 
 - Markdown: [barskov-nikita-cv.md](barskov-nikita-cv.md)
-- PDF: [barskov-nikita-cv.pdf](https://github.com/nikitabarskov/cv/releases/latest)
+- PDF:
+  [barskov-nikita-cv.pdf](https://github.com/nikitabarskov/cv/releases/latest)
 
 It's available in Norwegian and English.
 
