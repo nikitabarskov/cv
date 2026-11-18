@@ -19,7 +19,7 @@ configure:
         cpanm -n Params::ValidationCompiler && \
         cpanm -n YAML::Tiny
     RUN tlmgr update --self && \
-        tlmgr install titlesec latexindent
+        tlmgr install titlesec enumitem latexindent
 
 code:
     FROM +configure
@@ -28,7 +28,7 @@ code:
 pdf:
     ARG --required LOCALE
     FROM +code
-    RUN pandoc --pdf-engine=xelatex --include-in-header styles.tex -f gfm ${LOCALE}/barskov-nikita-cv.md -o barskov-nikita-cv_${LOCALE}.pdf
+    RUN pandoc --pdf-engine=xelatex --include-in-header styles.tex --lua-filter layout.lua -f gfm ${LOCALE}/barskov-nikita-cv.md -o barskov-nikita-cv_${LOCALE}.pdf
     SAVE ARTIFACT /srv/workspace/barskov-nikita-cv_${LOCALE}.pdf AS LOCAL barskov-nikita-cv_${LOCALE}.pdf
 
 fix:
