@@ -15,3 +15,5 @@ It's available in Norwegian and English.
 
 - https://careerservices.fas.harvard.edu/resources/create-a-strong-resume/
 - https://capd.mit.edu/channels/make-a-resume-cover-letter-cv/
+- https://github.com/sb2nov/resume
+- https://github.com/jakegut/resume
