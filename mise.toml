@@ -1,6 +1,8 @@
 [tools]
-just = "latest"
-oxfmt = "latest"
+"github:jolars/badness" = "latest"
+just = "1"
+oxfmt = "0"
+zizmor = "1"
 
 [settings]
 lockfile = true
