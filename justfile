@@ -17,15 +17,14 @@ validate:
     just --fmt --check
     oxfmt --check
 
-[cache(inputs=[locale + "/barskov-nikita-cv.md", "styles.tex", "mise.lock"], outputs="barskov-nikita-cv-" + locale + ".pdf")]
+[cache(inputs=[locale + "/barskov-nikita_cv.md", "styles.tex", "mise.lock"], outputs="barskov-nikita_cv_" + locale + ".pdf")]
 [script]
 build-locale locale:
     pandoc \
         --pdf-engine=tectonic \
         --include-in-header styles.tex \
         --from gfm \
-        --verbose \
-        {{ locale }}/barskov-nikita-cv.md \
-        -o barskov-nikita-cv-{{ locale }}.pdf
+        {{ locale }}/barskov-nikita_cv.md \
+        -o barskov-nikita_cv_{{ locale }}.pdf
 
 build: (build-locale "en")
