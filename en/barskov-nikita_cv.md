@@ -97,9 +97,10 @@ Oslo Norway
 
 September 2019 - March 2021
 
-* Developed internal analytics tools in Python for maritime traffic assessment,
-  including cargo and oil ship movement tracking and fracking activity detection.
-* Built backend services and data processing pipelines to support analytics
+- Developed internal analytics tools in Python for maritime traffic assessment,
+  including cargo and oil ship movement tracking and fracking activity
+  detection.
+- Built backend services and data processing pipelines to support analytics
   workflows and reporting capabilities.
 
 ### Inventale
@@ -110,11 +111,11 @@ Samara, Russian Federation
 
 September 2017 - August 2019
 
-* Developed and maintained a page interactions forecast engine using
-  Java and Apache Spark with batch data ingress and transformation pipelines.
-* Built internal REST APIs in Java and Scala for back-tracking evaluation of
-  the forecast engine, enabling continuous model improvements.
-* Contributed to backend development in Java, focusing on performance
+- Developed and maintained a page interactions forecast engine using Java and
+  Apache Spark with batch data ingress and transformation pipelines.
+- Built internal REST APIs in Java and Scala for back-tracking evaluation of the
+  forecast engine, enabling continuous model improvements.
+- Contributed to backend development in Java, focusing on performance
   optimization, data processing pipelines, and scalability improvements.
 
 ### Cxense
@@ -125,9 +126,9 @@ Samara, Russian Federation
 
 April 2017 - August 2017
 
-* Contributed to the development of internal APIs in Java for Cxense Data
+- Contributed to the development of internal APIs in Java for Cxense Data
   Management Platform (DMP), working with REST services and data integration.
-* Developed batch processing modules in Java and Apache Spark for data
+- Developed batch processing modules in Java and Apache Spark for data
   processing and analytics.
 
 ## Education
