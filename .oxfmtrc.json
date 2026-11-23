@@ -2,7 +2,7 @@
 	"arrowParens": "always",
 	"bracketSameLine": false,
 	"bracketSpacing": true,
-	"ignorePatterns": [],
+	"ignorePatterns": [".mise/"],
 	"jsxSingleQuote": false,
 	"printWidth": 80,
 	"proseWrap": "always",

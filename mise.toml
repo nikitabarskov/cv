@@ -1,6 +1,8 @@
 [tools]
-just = "latest"
-oxfmt = "latest"
+"github:tectonic-typesetting/tectonic" = "0"
+just = "1"
+oxfmt = "0"
+pandoc = "3"
 
 [settings]
 lockfile = true
