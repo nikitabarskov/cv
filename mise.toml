@@ -1,4 +1,5 @@
 [tools]
+gh = "2"
 "github:tectonic-typesetting/tectonic" = "0"
 just = "1"
 oxfmt = "0"
