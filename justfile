@@ -7,12 +7,25 @@ default:
 configure:
     mise install
 
-fix:
+gha-fix:
+    zizmor --fix=all .github/workflows
+
+fix: && gha-fix
     mise fmt
     just --fmt
     oxfmt --write
 
-validate:
+gha-validate +target=".github/workflows":
+    zizmor \
+        --no-progress \
+        --quiet \
+        --min-severity=low \
+        --persona pedantic \
+        --strict-collection \
+        --collect=all \
+        {{ target }}
+
+validate: && gha-validate
     mise fmt --check
     just --fmt --check
     oxfmt --check
@@ -27,7 +40,9 @@ build-locale locale:
         {{ locale }}/barskov-nikita_cv.md \
         -o barskov-nikita_cv_{{ locale }}.pdf
 
-build: (build-locale "en")
+build: validate (build-locale "en")
+
+ci: build
 
 release: build
     gh release create $(date '+%Y%m%d%H%M%S') --generate-notes --latest barskov-nikita_cv_*.pdf

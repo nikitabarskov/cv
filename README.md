@@ -30,7 +30,9 @@ Other tasks:
 - `just fix`: format all files.
 - `just validate`: check formatting without changes.
 
-CI runs `just build` on every pull request and on each push to `main`.
+CI runs `just ci` on every pull request and on each push to `main`. Release
+publishes a release when a push to `main` changes the CV or `styles.tex`. To
+publish a release by hand, run the `Release` workflow from the Actions tab.
 
 ## Links
 
