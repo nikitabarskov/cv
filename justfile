@@ -1,3 +1,6 @@
+set unstable
+set lists
+
 default:
     just --list
 
@@ -14,9 +17,15 @@ validate:
     just --fmt --check
     oxfmt --check
 
-build-no:
-    pandoc --pdf-engine=xelatex --include-in-header styles.tex -f gfm no_NB/barskov-nikita-cv.md -o barskov-nikita-cv_no_NB.pdf
-build-us:
-    pandoc --pdf-engine=xelatex --include-in-header styles.tex -f gfm en_US/barskov-nikita-cv.md -o barskov-nikita-cv_en_US.pdf
+[cache(inputs=[locale + "/barskov-nikita-cv.md", "styles.tex", "mise.lock"], outputs="barskov-nikita-cv-" + locale + ".pdf")]
+[script]
+build-locale locale:
+    pandoc \
+        --pdf-engine=tectonic \
+        --include-in-header styles.tex \
+        --from gfm \
+        --verbose \
+        {{ locale }}/barskov-nikita-cv.md \
+        -o barskov-nikita-cv-{{ locale }}.pdf
 
-build: build-us build-no
+build: (build-locale "en")
