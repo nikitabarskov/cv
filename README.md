@@ -1,15 +1,36 @@
 # CV
 
-I keep my CV as [a Markdown file](en_US/barskov-nikita-cv.md), every time I
-update it, GitHub actions publishes a release with a publically available PDF.
+I keep my CV as [a Markdown file](en/barskov-nikita_cv.md) and build it into a
+PDF with pandoc and Tectonic.
 
 Check out my latest CV:
 
-- Markdown: [barskov-nikita-cv.md](barskov-nikita-cv.md)
-- PDF:
-  [barskov-nikita-cv.pdf](https://github.com/nikitabarskov/cv/releases/latest)
+- Markdown: [barskov-nikita_cv.md](en/barskov-nikita_cv.md)
+- PDF: [latest release](https://github.com/nikitabarskov/cv/releases/latest)
 
-It's available in Norwegian and English.
+It's available in English.
+
+## Build
+
+Prerequisite: [mise](https://mise.jdx.dev). It installs the pinned versions of
+`just`, `pandoc`, `tectonic`, and `oxfmt` from `mise.lock`.
+
+```sh
+mise install
+just build
+```
+
+`just build` writes `barskov-nikita_cv_en.pdf` to the repository root. The first
+build downloads the TeX files it needs into Tectonic's cache, so it needs
+network access. `just` skips the build when the CV, `styles.tex`, and
+`mise.lock` have not changed since the last build.
+
+Other tasks:
+
+- `just fix`: format all files.
+- `just validate`: check formatting without changes.
+
+CI runs `just build` on every pull request and on each push to `main`.
 
 ## Links
 

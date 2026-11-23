@@ -28,3 +28,6 @@ build-locale locale:
         -o barskov-nikita_cv_{{ locale }}.pdf
 
 build: (build-locale "en")
+
+release: build
+    gh release create $(date '+%Y%m%d%H%M%S') --generate-notes --latest barskov-nikita_cv_*.pdf
