@@ -4,6 +4,7 @@ gh = "2"
 just = "1"
 oxfmt = "0"
 pandoc = "3"
+zizmor = "1"
 
 [settings]
 lockfile = true
