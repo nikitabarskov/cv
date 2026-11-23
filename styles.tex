@@ -1,22 +1,56 @@
+% Layout after Jake's resume (rendercv "sb2nov" theme), set in Charter
+% (rendercv "harvard" theme). resume.lua emits the \resume* and \entry* macros.
+
 \usepackage[english]{babel}
-\usepackage[utf8]{inputenc}
 
 \usepackage{geometry}
 \geometry{
 	a4paper,
-	left=10mm,
-	right=10mm,
-	bottom=10mm,
-	top=10mm
+	margin=15mm
 }
 \pagestyle{empty}
 
+% pandoc loads fontspec for XeTeX, thus set the OpenType files directly.
+\setmainfont{XCharter}[
+	Extension=.otf,
+	UprightFont=*-Roman,
+	BoldFont=*-Bold,
+	ItalicFont=*-Italic,
+	BoldItalicFont=*-BoldItalic
+]
+
 \usepackage{titlesec}
-\titleformat{\section}[display]{\center\bfseries\large}{\thesection}{}{}[\titlerule]
-\titlespacing{\section}{0em}{2ex}{2ex}
-\titleformat{\subsection}[display]{\center\bfseries\large}{\thesubsection}{}{}[\titlerule]
-\titlespacing{\subsection}{0em}{2ex}{2ex}
-\titleformat{\subsubsection}[runin]{\bfseries}{\thesubsubsection}{}{}[\hspace*{\fill}]
-\titlespacing{\subsubsection}{0em}{1ex}{1em}
-\titleformat{\paragraph}[runin]{\bfseries}{\theparagraph}{}{}[\hspace*{\fill}]
-\titlespacing{\paragraph}{0.5em}{1ex}{1em}
+\titleformat{\subsection}{\Large\bfseries}{}{0pt}{}[\vspace{-0.5ex}\titlerule]
+\titlespacing*{\subsection}{0pt}{2.5ex}{1ex}
+
+\usepackage{enumitem}
+\setlist[itemize]{
+	label=$\circ$,
+	leftmargin=1.6em,
+	topsep=0.2ex,
+	itemsep=0pt,
+	parsep=0pt
+}
+
+\newcommand{\resumename}[1]{%
+	\begin{center}
+		{\fontsize{26pt}{30pt}\selectfont\bfseries #1}
+	\end{center}
+	\vspace{-1ex}%
+}
+
+\newcommand{\resumecontacts}[1]{%
+	\begin{center}
+		\small #1
+	\end{center}
+}
+
+\newcommand{\entryheading}[2]{%
+	\par\vspace{1ex}%
+	\noindent\textbf{#1}\hfill\textit{#2}\par\nopagebreak
+}
+
+\newcommand{\entrysubheading}[2]{%
+	\par\nopagebreak\vspace{-\parskip}\vspace{0.4ex}%
+	\noindent\textit{#1}\hfill\textit{#2}\par\nopagebreak
+}

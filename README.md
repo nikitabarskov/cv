@@ -1,7 +1,10 @@
 # CV
 
 I keep my CV as [a Markdown file](en/barskov-nikita_cv.md) and build it into a
-PDF with pandoc and Tectonic.
+PDF with pandoc and Tectonic. The layout follows Jake's resume (the `sb2nov`
+theme of [RenderCV](https://github.com/rendercv/rendercv)) in the Charter font:
+[`resume.lua`](resume.lua) maps the Markdown headings to the LaTeX macros in
+[`styles.tex`](styles.tex).
 
 Check out my latest CV:
 
@@ -22,8 +25,8 @@ just build
 
 `just build` writes `barskov-nikita_cv_en.pdf` to the repository root. The first
 build downloads the TeX files it needs into Tectonic's cache, so it needs
-network access. `just` skips the build when the CV, `styles.tex`, and
-`mise.lock` have not changed since the last build.
+network access. `just` skips the build when the CV, `styles.tex`, `resume.lua`,
+and `mise.lock` have not changed since the last build.
 
 Other tasks:
 
@@ -31,8 +34,9 @@ Other tasks:
 - `just validate`: check formatting without changes.
 
 CI runs `just ci` on every pull request and on each push to `main`. Release
-publishes a release when a push to `main` changes the CV or `styles.tex`. To
-publish a release by hand, run the `Release` workflow from the Actions tab.
+publishes a release when a push to `main` changes the CV, `styles.tex`, or
+`resume.lua`. To publish a release by hand, run the `Release` workflow from the
+Actions tab.
 
 ## Links
 

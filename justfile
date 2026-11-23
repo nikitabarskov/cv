@@ -30,12 +30,13 @@ validate: && gha-validate
     just --fmt --check
     oxfmt --check
 
-[cache(inputs=[locale + "/barskov-nikita_cv.md", "styles.tex", "mise.lock"], outputs="barskov-nikita_cv_" + locale + ".pdf")]
+[cache(inputs=[locale + "/barskov-nikita_cv.md", "styles.tex", "resume.lua", "mise.lock"], outputs="barskov-nikita_cv_" + locale + ".pdf")]
 [script]
 build-locale locale:
     pandoc \
         --pdf-engine=tectonic \
         --include-in-header styles.tex \
+        --lua-filter resume.lua \
         --from gfm \
         {{ locale }}/barskov-nikita_cv.md \
         -o barskov-nikita_cv_{{ locale }}.pdf

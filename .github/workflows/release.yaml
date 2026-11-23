@@ -6,6 +6,7 @@ on:
     paths:
       - en/**
       - styles.tex
+      - resume.lua
 permissions:
   contents: read
 concurrency:
