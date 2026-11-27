@@ -6,8 +6,7 @@ fontsize: 10pt
 
 Located in Oslo, Norway. Contacts for communication are
 [`linkedin.com/in/nikitabarskov`][linkedin], [`nbarskov@gmail.com`][mail], or
-phone `+47 94 13 31 14` in **English** (Fluent), **Norwegian** (Proficient), or
-**Russian** (Native).
+phone `+47 941 93 314` in **English**, **Norwegian**, or **Russian**.
 
 Software Engineer with 8+ years of experience building highly scalable,
 cloud-native software and leading cross-functional teams.
